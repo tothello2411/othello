@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>Taxi Shift</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: "Tahoma", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #000000, #434343); /* بک‌گراند دارک خوشگل */
+      color: white;
+    }
+
+    .card {
+      background: rgba(255, 255, 0, 0.1);
+      border: 2px solid yellow;
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 0 20px yellow;
+      animation: pulse 2s infinite;
+    }
+
+    .card h1 {
+      font-size: 40px;
+      margin: 0 0 20px;
+      color: yellow;
+      text-shadow: 0 0 10px yellow;
+    }
+
+    .btn {
+      display: inline-block;
+      background: yellow;
+      color: black;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: black;
+      color: yellow;
+      box-shadow: 0 0 15px yellow;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 20px yellow; }
+      50% { box-shadow: 0 0 40px yellow; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🚕 Taxi Shift</h1>
+    <p>شیفت تاکسی خودتو همین الان شروع کن!</p>
+    <a href="#" class="btn">شروع شیفت</a>
+  </div>
+</body>
+</html>
